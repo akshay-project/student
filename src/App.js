@@ -1,25 +1,92 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+// import { Route, Routes } from 'react-router-dom';
 
-function App() {
+import AdminFront from './component/admins/AdminFront';
+import StudentFront from './component/students/StudentFront';
+import FrontMain from './component/FrontMain';
+
+
+const App = () => {
+
+  const [ad, setAdmin] = useState(false);
+  const [fr, setFront] = useState(true);
+  const [st, setStudent] = useState(false);
+  const adminFun = () => {
+    console.log("This is a function");
+      setAdmin(true);
+      setFront(false);
+  }
+  const studentFun = () => {
+    console.log("This is a function");
+      setStudent(true);
+      setFront(false);
+  }
+
+  const admin = () => {
+    if (ad === true) {
+      return (
+        <>
+          <AdminFront />
+         
+        </>
+      )
+    }
+    else {
+      return (
+        <>
+
+        </>
+      )
+    }
+  }
+  //For Student
+  const student = () => {
+    if (st === true) {
+      return (
+        <>
+          <StudentFront />
+         
+        </>
+      )
+    }
+    else {
+      return (
+        <>
+
+        </>
+      )
+    }
+  }
+  //For Front
+  const front = () => {
+    if (fr === true) {
+      return (
+        <>
+          <FrontMain adminFun={adminFun} studentFun={studentFun}/>
+        </>
+      )
+    }
+    else {
+      return (
+        <>
+
+        </>
+      )
+    }
+  }
+
+
+  //This is a main return
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <AdminFront/> */}
+      {/* <StudentFront/> */}
+      {admin()}
+      {front()}
+      {student()}
+     
+    </>
+  )
 }
 
-export default App;
+export default App
