@@ -27,7 +27,7 @@ const Notifications = () => {
 
   const loadUsers = async () => {
 
-    const result = await axios.get("http://localhost:1111/notifications/show");
+    const result = await axios.get("https://student-akshay.herokuapp.com/notifications/show");
     console.log(result);
     setData(result.data);
     console.log("This is Function");

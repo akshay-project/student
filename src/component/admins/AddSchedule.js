@@ -117,7 +117,7 @@ const AddSchedule = () => {
     }
 
     const submit = (obj) => {
-        let url = "http://localhost:1111/schedule/add";
+        let url = "https://student-akshay.herokuapp.com/schedule/add";
         // let noti1 = { notifications: noti }
         let data = obj;
 

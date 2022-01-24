@@ -11,7 +11,7 @@ const Schedule = () => {
 
     const loadUsers = async () => {
 
-        const result = await axios.get("http://localhost:1111/schedule/show");
+        const result = await axios.get("https://student-akshay.herokuapp.com/schedule/show");
         console.log(result);
         setAllData(result.data);
         console.log("This is Function");

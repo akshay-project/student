@@ -9,8 +9,8 @@ const AdminFront = () => {
     const [userName, setUserName ] = useState("");
     const [password, setPassword ] = useState("");
     const [msg,setMsg] = useState("");
-    const [check, setCheck] = useState(true);
-    const [formc, SetForm] = useState(false);
+    const [check, setCheck] = useState(false);
+    const [formc, SetForm] = useState(true);
     // const [num1, setNum1] = useState(1);
     // const [num2, setNum2] = useState(1);
   

@@ -6,6 +6,8 @@ import ViewNoti from './ViewNoti';
 import ViewSchedule from './ViewSchedule';
 import AddSchedule from './AddSchedule';
 import Home from './Home';
+import AddQuiz from './AddQuiz'
+import ViewQuizAdmin from './ViewQuizAdmin';
 // import Try from './Try';
 const Admin = ({ setCheck, SetForm }) => {
 
@@ -35,6 +37,8 @@ const Admin = ({ setCheck, SetForm }) => {
 
                 <Route path='/viewschedule' element={<ViewSchedule/>} />
                 <Route path='/addschedule' element={<AddSchedule/>} />
+                <Route path='/addquiz' element={<AddQuiz/>} />
+                <Route path='/viewquizadmin' element={<ViewQuizAdmin/>} />
                
                 {/* <Route exact path="/users/add/:id" component={Try}/> */}
                 {/* <Route path='/marks' element={<Marks />} />

@@ -37,6 +37,11 @@ const Navbar = () => {
                                 <button type="button" className="btn btn-primary">Add Schedule</button>
                             </Link>
                         </li>
+                        <li className="nav-item active" style={{ marginLeft: "10px" }}>
+                            <Link to='/addquiz'>
+                                <button type="button" className="btn btn-primary">Add Quiz</button>
+                            </Link>
+                        </li>
                         {/* <li className="nav-item active" style={{marginLeft:"10px"}}>
                             <Link to='/marks'>
                                 <button type="button" className="btn btn-primary">Add Marks</button>

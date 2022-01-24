@@ -8,8 +8,9 @@ import Schedule from './Schedule';
 import Notfound from './Notfound';
 import Notifications from './Notifications';
 import Profile from './Profile';
-import MockTest from './MockTest';
+
 import UploadAss from './UploadAss';
+import Quiz from './Quiz';
 // import Student from './Student';
 
 const Student = ({ setCheck, SetForm }) => {
@@ -37,8 +38,9 @@ const Student = ({ setCheck, SetForm }) => {
                 <Route path='/schedule' element={<Schedule />} />
                 <Route path='/notification' element={<Notifications />} />
                 <Route path='/profile' element={<Profile />} />
-                <Route path='/mocktest' element={<MockTest />} />
+                
                 <Route path='/uploadassignment' element={<UploadAss />} />
+                <Route path='/quizview' element={<Quiz />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
 

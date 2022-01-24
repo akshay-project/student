@@ -24,7 +24,7 @@ const ViewNoti = () => {
     //Get Data
     const loadUsers = async () => {
         
-        const result = await axios.get("http://localhost:1111/notifications/show");
+        const result = await axios.get("https://student-akshay.herokuapp.com/notifications/show");
         console.log(result);
         setData(result.data);
         console.log("This is Function");
@@ -35,7 +35,7 @@ const ViewNoti = () => {
     //Delete User
     const deleteUser=async id =>{
 
-        await axios.delete(`http://localhost:1111/notifications/delete/${id}`);
+        await axios.delete(`https://student-akshay.herokuapp.com/notifications/delete/${id}`);
         loadUsers();
        }
     return (

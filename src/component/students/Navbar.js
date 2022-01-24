@@ -43,13 +43,13 @@ const Navbar = () => {
                         </li>
 
                        
-                     
-                       
                         <li className="nav-item active" style={{marginLeft:"10px"}}>
-                            <Link to='/mocktest'>
-                                <button type="button" className="btn btn-primary">MockTest</button>
+                            <Link to='/quizview'>
+                                <button type="button" className="btn btn-primary">Mock Test</button>
                             </Link>
                         </li>
+                       
+                      
                       
                         <li className="nav-item active" style={{marginLeft:"10px"}}>
                             <Link to='/uploadassignment'>

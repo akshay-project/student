@@ -5,7 +5,8 @@ const Add = () => {
 
     const [noti, setNoti] = useState("");
     const submit = () => {
-        let url = "http://localhost:1111/notifications/add";
+        // https://student-akshay.herokuapp.com/schedule/show
+        let url = "https://student-akshay.herokuapp.com/notifications/add";
         let noti1 = { notifications: noti }
         let data = noti1;
 
