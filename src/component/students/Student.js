@@ -10,7 +10,7 @@ import Notifications from './Notifications';
 import Profile from './Profile';
 
 import UploadAss from './UploadAss';
-import Quiz from './Quiz';
+import ViewQuiz from './ViewQuiz';
 // import Student from './Student';
 
 const Student = ({ setCheck, SetForm }) => {
@@ -40,7 +40,7 @@ const Student = ({ setCheck, SetForm }) => {
                 <Route path='/profile' element={<Profile />} />
                 
                 <Route path='/uploadassignment' element={<UploadAss />} />
-                <Route path='/quizview' element={<Quiz />} />
+                <Route path='/quizview' element={<ViewQuiz />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
 

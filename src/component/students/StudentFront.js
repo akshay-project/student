@@ -7,8 +7,8 @@ const StudentFront = () => {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const [msg, setMsg] = useState("");
-    const [check, setCheck] = useState(true);
-    const [formc, SetForm] = useState(false);
+    const [check, setCheck] = useState(false);
+    const [formc, SetForm] = useState(true);
   
     const fun = () => {
       console.log("This is fun");

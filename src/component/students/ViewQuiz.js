@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios'
 const ViewQuiz = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
         console.log("Hi!, kaisa hai bro!");
@@ -47,7 +47,10 @@ const ViewQuiz = () => {
 
     }
     const startExam = () => {
-        setStart(true);
+        if(data!==null){
+            setStart(true);
+
+        }
     }
     //Check
     const check = (selected, correct, no) => {
