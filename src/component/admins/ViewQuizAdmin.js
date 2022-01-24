@@ -19,6 +19,11 @@ const ViewQuizAdmin = () => {
         console.log("This is Function");
         
     };
+    const deleteUser = async id => {
+
+        await axios.delete(`https://student-akshay.herokuapp.com/quiz/delete/${id}`);
+        loadUsers();
+    }
   return <div>
       <h1 className='text-center'>View All Quiz Added</h1>
       <br />
@@ -26,6 +31,7 @@ const ViewQuizAdmin = () => {
             {
                 data.map((user,index)=>(
                     <div  key={index}>
+                         <div onClick={() => deleteUser(user._id)}>{<i className="bi bi-archive"></i>}</div>
                         <h1 style={{border:"1px solid"}}>{index+1}) {user.question}</h1>
                         <br />
                         {
